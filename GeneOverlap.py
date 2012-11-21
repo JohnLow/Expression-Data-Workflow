@@ -2,6 +2,7 @@
 #!/usr/bin/python
 import csv
 import MySQLdb
+import rpy
 
 
 	
@@ -14,7 +15,7 @@ templist = []
 
 array = list(csv.reader(open(r'test.csv'))) #temp 2d array from csv
 
-#iterates through cs and stores gene names in 1d array
+#iterates through csv and stores gene names in 1d array
 for x in range(1,len(array)):
 	for y in range(0,len(array[0])):
 		genelist.append(array[x][y]) #genelist is a temporary array
